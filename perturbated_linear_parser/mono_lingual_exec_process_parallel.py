@@ -143,6 +143,7 @@ parser.add_argument('--baseline',default='no_baseline')
 parser.add_argument('--create_files',action='store_true')
 parser.add_argument('--train_models',action='store_true')
 parser.add_argument('--dont_find_noise',action='store_true')
+parser.add_argument('--eval_method',default='oracle')
 
 parser.add_argument('--fixed_noise',default=False)
 parser.add_argument('--noise_method',default='m')
@@ -156,6 +157,7 @@ train_models = args.train_models
 fixed_noise = args.fixed_noise
 noise_method = args.noise_method
 find_noise = not (args.dont_find_noise)
+eval_method = args.eval_method
 
 exec_process_obj = exec_process_parallel(create_files=create_files,is_train_dev_together = is_train_dev_together)
 
@@ -176,7 +178,7 @@ elif (baseline=='k_best'):
 
 elif (baseline=='no_baseline'):
     all_ready_lng = ray.get([exec_process_obj.execute_parallel.remote(language,
-                                                               eval_method='oracle',
+                                                               eval_method=eval_method,
                                                                train_models=train_models,
                                                                find_noise=find_noise,
                                                                is_oracle_inference_results=True,

@@ -87,7 +87,7 @@ class exec_process_parallel():
 
     @staticmethod
     @ray.remote(num_gpus=1)
-    def execute_parallel_inference(source_language,target_language,inference_mode='regular_predict_file'):
+    def execute_parallel_inference(source_language,target_language,embedding_path,alignment_file_path,inference_mode='regular_predict_file'):
         model_path = os.path.join(DATA, target_language, 'pos_tagger')
         create_dir(model_path, drop_if_exist=False)
 
@@ -96,8 +96,8 @@ class exec_process_parallel():
         langauge_dir_path = os.path.join(DATA,target_language)
         test_path_list = [os.path.join(langauge_dir_path,"test",file_l) for file_l in os.listdir(os.path.join(langauge_dir_path,"test")) if '~' not in file_l and file_l.endswith('.conllu')]#can be more than one file
 
-        embedding_path = os.path.join(DATA,'bilingual_embedding','fasttext_embed','wiki.'+target_language.split('_')[-1]+'.vec')
-        alignment_file_name = os.path.join(DATA,'bilingual_embedding','alignment_matrices',target_language.split("_")[-1]+'.txt')
+        embedding_path = os.path.join(embedding_path,'wiki.'+target_language.split('_')[-1]+'.vec')
+        alignment_file_name = os.path.join(alignment_file_path,target_language.split("_")[-1]+'.txt')
 
         run_command =[POS_TAGGER, "--mode LSTM",
              "--num_epochs 10",
@@ -135,18 +135,26 @@ class exec_process_parallel():
 args_parser = argparse.ArgumentParser()
 
 args_parser.add_argument('--create_files',action='store_true')
+args_parser.add_argument('--num_epochs',default=200)
+args_parser.add_argument('--source_language',default='POS_en')
+args_parser.add_argument('--embedding_path',default=os.path.join(DATA,'bilingual_embedding','fasttext_embed'))
+args_parser.add_argument('--alignment_path',default=os.path.join(DATA,'bilingual_embedding','alignment_matrices'))
+
 args = args_parser.parse_args()
 create_files = args.create_files
-
+num_epochs = args.num_epochs
+source_language = args.source_language
+embedding_path = args.embedding_path
+alignment_file_path = args.alignment_path
 
 exec_process_obj = exec_process_parallel(create_files=create_files)
-execute_training_source_lng(language='POS_en',num_epochs=200)
+execute_training_source_lng(language=source_language,num_epochs=num_epochs)
 print("Training step is over")
 
 pos_experiment_lngs = ['zh','pt','it','ja','he','ar','da','fr','nl']
 
 language_dirs = [lng for lng in os.listdir(DATA) if lng.startswith("UD2") and lng.split('_')[1]]
 
-all_ready_lng = ray.get([exec_process_obj.execute_parallel_inference.remote(source_language='POS_en',target_language=language) for language in language_dirs])
+all_ready_lng = ray.get([exec_process_obj.execute_parallel_inference.remote(source_language=source_language,target_language=language,embedding_path=embedding_path,alignment_file_path=alignment_file_path) for language in language_dirs])
 
 
