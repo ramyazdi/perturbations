@@ -33,7 +33,7 @@ Data folders should be located at the following hierarchy:
 ### Cross-Lingual Dependency Parsing 
 To train a CL linear parsing model execute the following command:
 
-   python perturbated_linear_parser/cross_lingual_exec_process_parallel.py --train_models [ignore if only an inference step is needed] --noise_method ['a' for additive or 'm' for multiplicative noise]
+``` python perturbated_linear_parser/cross_lingual_exec_process_parallel.py --train_models [ignore if only an inference step is needed] --noise_method ['a' for additive or 'm' for multiplicative noise] ```
 
 After executing the above command, an evaluation file should be created per each language.
 
