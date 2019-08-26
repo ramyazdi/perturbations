@@ -19,8 +19,7 @@ class BiRecurrentConv(nn.Module):
         self.use_char = use_char
         # dropout word
         self.dropout_in = nn.Dropout2d(p=p_in)
-        # standard dropout
-        self.dropout_rnn_in = nn.Dropout(p=p_rnn[0])
+
         self.dropout_out = nn.Dropout(p_out)
 
         if rnn_mode == 'RNN':
@@ -90,8 +89,6 @@ class BiRecurrentConv(nn.Module):
         else:
             input = word
 
-        # apply dropout rnn input
-        input = self.dropout_rnn_in(input)
         # prepare packed_sequence
         if length is not None:
             seq_input, hx, rev_order, mask = utils.prepare_rnn_seq(input, length, hx=hx, masks=mask, batch_first=True)

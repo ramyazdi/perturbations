@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4402dfb-6dad-4c7c-a7c4-20ff9c6126c3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/neural_pos_tagger/exec_pos_tagger.py" afterPath="$PROJECT_DIR$/neural_pos_tagger/exec_pos_tagger.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/perturbated_linear_parser/mono_lingual_exec_process_parallel.py" afterPath="$PROJECT_DIR$/perturbated_linear_parser/mono_lingual_exec_process_parallel.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/neuro_nlp/models/sequence_labeling.py" afterPath="$PROJECT_DIR$/neuro_nlp/models/sequence_labeling.py" />
     </list>
     <ignored path="final_parser.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,7 +26,7 @@
       <file leaf-file-name="exec_pos_tagger.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/neural_pos_tagger/exec_pos_tagger.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="610">
+            <state relative-caret-position="2363">
               <caret line="144" column="28" selection-start-line="144" selection-start-column="28" selection-end-line="144" selection-end-column="28" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
@@ -36,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cross_lingual_exec_process_parallel.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cross_lingual_exec_process_parallel.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/perturbated_linear_parser/cross_lingual_exec_process_parallel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="145" column="35" selection-start-line="145" selection-start-column="23" selection-end-line="145" selection-end-column="35" />
+            <state relative-caret-position="424">
+              <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
                 <marker date="1564656960515" expanded="true" signature="1718:2355" ph="..." />
@@ -52,7 +51,7 @@
       <file leaf-file-name="mst_wrapper.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/perturbated_linear_parser/mst_wrapper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
+            <state relative-caret-position="1020">
               <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
               <folding />
             </state>
@@ -62,7 +61,7 @@
       <file leaf-file-name="mono_lingual_exec_process_parallel.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/perturbated_linear_parser/mono_lingual_exec_process_parallel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="775">
+            <state relative-caret-position="2907">
               <caret line="181" column="89" selection-start-line="181" selection-start-column="89" selection-end-line="181" selection-end-column="89" />
               <folding />
             </state>
@@ -72,7 +71,7 @@
       <file leaf-file-name="optimal_noise_k_minus_1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/perturbated_linear_parser/optimal_noise_k_minus_1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
+            <state relative-caret-position="1411">
               <caret line="83" column="75" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="75" />
               <folding>
                 <element signature="e#22#40#0" expanded="true" />
@@ -84,7 +83,7 @@
       <file leaf-file-name="globals.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/perturbated_linear_parser/globals.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="119">
               <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
@@ -94,8 +93,18 @@
       <file leaf-file-name="posTagger.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/neural_pos_tagger/posTagger.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="151" column="17" selection-start-line="151" selection-start-column="8" selection-end-line="151" selection-end-column="17" />
+            <state relative-caret-position="460">
+              <caret line="216" column="33" selection-start-line="216" selection-start-column="18" selection-end-line="216" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sequence_labeling.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/neuro_nlp/models/sequence_labeling.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1103">
+              <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -166,6 +175,7 @@
         <option value="$PROJECT_DIR$/perturbated_linear_parser/globals.py" />
         <option value="$PROJECT_DIR$/perturbated_linear_parser/mono_lingual_exec_process_parallel.py" />
         <option value="$PROJECT_DIR$/neural_pos_tagger/exec_pos_tagger.py" />
+        <option value="$PROJECT_DIR$/neuro_nlp/models/sequence_labeling.py" />
       </list>
     </option>
   </component>
@@ -200,8 +210,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -250,10 +258,12 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/neural_pos_tagger/utils_biaffine.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Biaffine" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
@@ -529,7 +539,7 @@
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17085153" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15338428" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -673,7 +683,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/perturbated_parser/sgd_mst_oriented_noise/outfile" />
     <entry file="file://$PROJECT_DIR$/perturbated_parser/short_scripts_checkers/check_optimal_noises_files.py" />
     <entry file="file://$PROJECT_DIR$/perturbated_parser/stochastic_gradient_decent_tut/tut1.py" />
     <entry file="file://$PROJECT_DIR$/perturbated_linear_parser/__init__.py">
@@ -745,9 +754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-724">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#17#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -786,7 +792,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -840,7 +845,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-694">
           <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -855,7 +859,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="656">
           <caret line="115" column="46" selection-start-line="115" selection-start-column="46" selection-end-line="115" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -863,7 +866,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -871,13 +873,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/perturbated_linear_parser/globals.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="119">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
@@ -885,7 +886,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/perturbated_linear_parser/mst_wrapper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
+        <state relative-caret-position="1020">
           <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
           <folding />
         </state>
@@ -893,7 +894,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/perturbated_linear_parser/optimal_noise_k_minus_1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
+        <state relative-caret-position="1411">
           <caret line="83" column="75" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="75" />
           <folding>
             <element signature="e#22#40#0" expanded="true" />
@@ -901,17 +902,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/neural_pos_tagger/posTagger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="151" column="17" selection-start-line="151" selection-start-column="8" selection-end-line="151" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/perturbated_linear_parser/mono_lingual_exec_process_parallel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
+        <state relative-caret-position="2907">
           <caret line="181" column="89" selection-start-line="181" selection-start-column="89" selection-end-line="181" selection-end-column="89" />
           <folding />
         </state>
@@ -919,7 +912,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/neural_pos_tagger/exec_pos_tagger.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
+        <state relative-caret-position="2363">
           <caret line="144" column="28" selection-start-line="144" selection-start-column="28" selection-end-line="144" selection-end-column="28" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
@@ -929,12 +922,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/perturbated_linear_parser/cross_lingual_exec_process_parallel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="145" column="35" selection-start-line="145" selection-start-column="23" selection-end-line="145" selection-end-column="35" />
+        <state relative-caret-position="424">
+          <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
             <marker date="1564656960515" expanded="true" signature="1718:2355" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neural_pos_tagger/posTagger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="216" column="33" selection-start-line="216" selection-start-column="18" selection-end-line="216" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neuro_nlp/models/sequence_labeling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1103">
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
