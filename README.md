@@ -11,15 +11,15 @@ All requirements are included in the requirements.txt file. They can be installe
 
 ## Data
 All tasks were executed over the [UD V2.0](https://universaldependencies.org) data set, hence, data should be formatted in UD format (CoNLL).\
-Data folders should be located at the following hierarchy:
+Data folders should be located at the following hierarchy:\
 --perturbations 
   - Data 
-   - example_language_1
+    - example_language_1
      - xxx_train.conllu
      - xxx_dev.conllu
      - test
        - xxx_test.conllu (can be more than one file)
-   - example_language_2
+    - example_language_2
      - yyy_train.conllu
      - yyy_dev.conllu
      - test
