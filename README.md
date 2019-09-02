@@ -15,15 +15,15 @@ Data folders should be located at the following hierarchy:\
 --perturbations 
   - Data 
     - example_language_1
-     - xxx_train.conllu
-     - xxx_dev.conllu
-     - test
-       - xxx_test.conllu (can be more than one file)
+      - xxx_train.conllu
+      - xxx_dev.conllu
+      - test
+        - xxx_test.conllu (can be more than one file)
     - example_language_2
-     - yyy_train.conllu
-     - yyy_dev.conllu
-     - test
-       - yyy_test.conllu (can be more than one file)
+      - yyy_train.conllu
+      - yyy_dev.conllu
+      - test
+        - yyy_test.conllu (can be more than one file)
    - perturbated_liang_parser
    - 
    - 
